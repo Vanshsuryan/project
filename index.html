@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Brother Hood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+    <h1>BROTHERHOOD</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="Join">
+        Join 
+    </div>
+</header>
+<main>
+    <section class="intro">
+        <h1>DEFINE YOUR</h1>
+        <h2>STYLE</h2>
+        <p>Where urban culture meets elevated streetwear.</p> <p>Join the brotherhood of those who dare to stand out.</p>
+        <nav class ="buttons">
+            <div class="shop">
+                SHOP COLLECTION
+            </div>
+            <div class ="ourstory">
+                 OUR STORY
+            </div>
+        </nav>
+    </section>
+</main>
+<div class="line">
+            <h1>FEATURED COLLECTIONS</h1>
+            <p>Curated pieces that embody the spirit of urban brotherhood.</p>
+            <p> Each collection tells a story of community, creativity, and culture.</p>
+        </div>
+<section class="Collections">
+        
+        
+        <div class="Collections">
+            <img src="./hoodie.webp" alt="Hoodie" height="350" width ="300">
+            <h3>Brotherhood Hoodie</h3>
+            <p>$99.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="Collections">
+            <img src="pants.jpg" alt="Pants" height="350" width ="300">
+            <h3>Pants</h3>
+            <p>$79.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="Collections">
+            <img src="tshirt.jpg" alt="T-Shirts" height="350" width ="300">
+            <h3>T-Shirts</h3>
+            <p>$69.99</p>
+            <button>Add to Cart</button>
+        </div>  
+</section>
+<section class="about">
+    <div class="text">
+        <h1>THE BROTHERHOOD STORY</h1>
+        <p>Born from the streets, forged in community. Brotherhood isn't just a brand—it's a movement that celebrates the bonds formed through shared passion, creativity, and authentic expression.</p>
+        <p>We believe that true style comes from within, amplified by the community around you. Every piece we create is designed to empower individuals while strengthening the collective identity of those who dare to be different.</p>
+        <p>Join us in redefining urban culture, one outfit at a time. Together, we are more than just a brand—we are a brotherhood.</p>
+    </div>
+    <div class="image">
+        <img src="logo (2).png" alt="Brotherhood" height="400" width ="400">
+</section>
+<section class="Joinus">
+    <div class="Joinus">
+        <h1>JOIN THE BROTHERHOOD</h1>
+    <p>Sign up for exclusive updates, early access to new collections, and special offers.</p>
+    </div>
+    <form action="#">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">JOIN</button>
+    </form>
+</section>                  
+<footer>
+    <p>Follow us on:</p>
+    <div class="social-icons">  
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>© 2025 Brotherhood. All rights reserved.</p>
+</footer>
+<script>
+    // Alert when "Add to Cart" is clicked
+    document.querySelectorAll('button').forEach(function(btn) {
+        if (btn.textContent === "Add to Cart") {
+            btn.addEventListener('click', function() {
+                alert("Added to cart!");
+            });
+        }
+    });
+
+    // Email form validation
+    document.querySelector('form').addEventListener('submit', function(e) {
+        var emailInput = this.querySelector('input[type="email"]');
+        var email = emailInput.value;
+        var emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            e.preventDefault();
+        } else {
+            alert("Thank you for joining the Brotherhood!");
+        }
+    });
+</script>
+</body>
+</html>

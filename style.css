@@ -1,0 +1,412 @@
+header{
+    background-color:white;
+    color: rgb(31, 30, 30);
+    padding: 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 1000;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;    
+    padding: 0 20px;
+    height: 80px;
+    border-bottom: 2px solid white;
+    shape-outside: circle();
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 40px;
+    padding: 0;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover{
+    background-color: orangered;
+    color: #f4eeee;
+}
+nav ul li a.active{
+    background-color: orangered;
+    color: #f4eeee;
+}
+div.Join{
+    background-color: #000000;
+    color: rgb(241, 237, 237);
+    border: none;
+    justify-self: flex-start;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    shape-outside: circle();
+    margin-left: 1px;
+    margin-right: 20px;
+
+}
+div.Join:hover{
+    background-color: orangered;
+    color: #f4eeee;
+}
+div.Join:active{
+    background-color: #d45612;
+    color: rgb(31, 30, 30);
+    border: 2px solid rgb(223, 102, 27);
+}
+section.intro{
+    padding: 20px;
+    width: 500px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: rgb(31, 30, 30);
+    text-align: center;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    min-width: 1200px;
+    
+    
+}
+section.intro h1{
+    font-size: 90px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.intro h2{
+    font-size: 90px;
+    margin-bottom: 20px;
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section.intro p{
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.shop{
+    background-color:orangered;
+    color: #f4eeee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+    min-width: fit-content;
+    justify-content: flex-start;
+}
+div.shop:hover{
+    background-color: black;
+    color: rgb(244, 242, 242);
+    border: 2px solid orangered;
+}
+div.shop:active{
+    background-color:black;
+    color: rgb(241, 235, 235);
+    border: 2px solid rgb(223, 102, 27);
+}
+nav ul li a.shop{
+    background-color: orangered;
+    color: #f4eeee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+    min-width: fit-content;
+    justify-content: flex-start;    
+}
+nav ul li a.shop:hover{
+    background-color: black;
+    color: rgb(31, 30, 30);
+    border: 2px solid orangered;
+}
+nav ul li a.shop:active{
+    background-color:black;
+    color: rgb(241, 235, 235);
+    border: 2px solid rgb(223, 102, 27);
+}
+nav.buttons{
+    margin-left: 400px;
+}
+nav{
+    width: 50%;
+    justify-content:fit-content;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left:250px;
+    gap: 20px;
+}
+div.ourstory{
+    background-color:black;
+    color: #f4eeee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 20px;
+    min-width: fit-content;
+    justify-content: flex-start;
+
+}
+div.ourstory:hover{
+    background-color: orangered;
+    color: rgb(31, 30, 30);
+    border: 2px solid orangered;
+}
+div.ourstory:active{
+    background-color:orangered;
+    color: rgb(241, 235, 235);
+    border: 2px solid rgb(223, 102, 27);
+}
+div.line{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(31, 30, 30);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.line h1{
+    border-bottom: 2px solid rgb(31, 30, 30);
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(31, 30, 30);
+
+}
+div.Collections{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;      
+    max-width: 300px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: rgb(31, 30, 30);
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    shape-outside: circle();
+    margin-bottom: 40px;
+}
+div.Collections img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    display: flex;
+}
+div.Collections img:hover{
+    transform: scale(1.05);
+}
+div.Collections h3{
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+div.Collections p{
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+div.Collections button{
+    background-color: rgb(19, 18, 17);
+    color: #f4eeee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+div.Collections button:hover{
+    background-color: orangered;
+    color: #f4eeee;
+}
+div.Collections button:active{
+    background-color: #d45612;
+    color: rgb(31, 30, 30);
+    border: 2px solid rgb(223, 102, 27);
+}
+section.Collections{
+    padding: 20px;
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: rgb(31, 30, 30);
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    shape-outside: circle();
+}
+footer{
+    background-color: rgb(31, 30, 30);
+    color: #f4eeee;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+section.about{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: rgb(122, 85, 85);
+    text-align: center;
+    background-color:rgb(19, 18, 17);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    shape-outside: circle();
+    display: flex;
+}
+div.text{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(219, 219, 212);
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+div.text h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(211, 76, 18);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+    border-bottom: 2px solid rgb(220, 59, 31);
+}
+section.Joinus{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: rgb(31, 30, 30);
+    text-align: center;
+    background-color:orangered;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    shape-outside: circle();
+    
+}
+div.Joinus h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(244, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+div.Joinus p{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: rgb(241, 235, 235);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section.Joinus button{
+    background-color: #000000;
+    color: #f4eeee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    shape-outside: circle();
+    margin-left: 1px;
+    margin-right: 20px;
+
+}
+section.Joinus button:hover{
+    background-color:#666;
+    color: #f4eeee;
+}
+section.Joinus button:active{
+    background-color: #d45612;
+    color: rgb(31, 30, 30);
+    border: 2px solid rgb(223, 102, 27);
+}
+section.Joinus form{
+    shape-outside: circle();
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+section.Joinus input[type="email"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    max-width: 100%;
+}
+div.social-icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;  
+}
+div.social-icons a{
+    color: #f4eeee;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+div.social-icons a:hover{
+    color: orangered;
+}
+div.social-icons a:active{
+    color: rgb(223, 102, 27);
+}
